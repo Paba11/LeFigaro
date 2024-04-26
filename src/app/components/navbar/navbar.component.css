@@ -6,3 +6,7 @@
 .navbarSmall {
   font-size: x-small !important;
 }
+
+a {
+  color: white;
+}

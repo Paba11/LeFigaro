@@ -1,0 +1,53 @@
+.headerImg{
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.headerThumbnail {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quoteThumbnail {
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.headerButton {
+  background-color: #ECB62F;
+  font-size: small;
+  color: #163860;
+}
+
+.headerButton:hover {
+  background-color: #FFCA45;
+}
+
+.header {
+  background-color: white;
+}
+
+a {
+  color: #163860;
+  font-weight: bold;
+  font-size: small;
+}
+
+a:hover {
+  color: #4B8FE2;
+}
+
+i {
+  margin-left: 5px;
+}
+
+.header {
+  border-bottom: 4px solid #163860;
+}
