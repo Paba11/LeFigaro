@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {CursorService} from "../../services/cursor.service";
 import {NgIf, NgStyle} from "@angular/common";
 
@@ -7,20 +7,38 @@ import {NgIf, NgStyle} from "@angular/common";
   standalone: true,
   imports: [
     NgIf,
-    NgStyle
-
+    NgStyle,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 
+  isMenuOpened: boolean = false;
   isDropDown: boolean = false;
   isToggled: boolean = false;
   constructor(public cursorService: CursorService) {
+    this.checkWindowSize();
   }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: Event) {
+    this.checkWindowSize();
+  }
+
+  checkWindowSize() {
+    if(window.innerWidth <= 1023) {
+      this.isToggled = true;
+    }
+    else this.isToggled = false;
+  }
+
   dropdown() {
     this.isDropDown = !this.isDropDown;
   }
-  //Aggiungere un windowService per controllare quando viene effettuato il toggle
+
+  openMenu() {
+    this.isMenuOpened = !this.isMenuOpened;
+  }
+
 }

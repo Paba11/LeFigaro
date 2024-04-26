@@ -6,22 +6,21 @@ import {Component, HostListener} from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'leFigaro';
-  isHeadVisible = true;
-  lastScrollTop = 0;
+  title: string = 'leFigaro';
+  isHeadVisible: boolean = true;
+  lastScrollTop: number = 0;
+  navbarHeight: number = 300;
 
   constructor() {}
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScrollTop > this.lastScrollTop) {
+    const currentScrollTop = document.documentElement.scrollTop;
+    if (currentScrollTop > this.lastScrollTop && currentScrollTop > this.navbarHeight) {
       // Scrolling down
-      console.log("down");
       this.isHeadVisible = false;
     } else {
       // Scrolling up
-      console.log("up");
       this.isHeadVisible = true;
     }
 

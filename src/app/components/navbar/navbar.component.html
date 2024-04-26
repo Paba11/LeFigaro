@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark"
-     [ngStyle]="{'background-color': isToggled ? 'white' : '#163860'}">
+<nav *ngIf="!isToggled" class="navbar navbar-expand-lg navbar-dark"
+     style="background-color: #163860;">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div id="searchBar" class="col-lg-2 text-center"
          (mouseenter)="cursorService.changeCursor('pointer', 'searchBar')"
@@ -60,11 +60,33 @@
       <span>Se connecter</span>
     </div>
   </div>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          style="color: white !important;">
-    <i class="bi bi-list" style="margin-right: 5px"></i>
-    <span>Menu</span>
-  </button>
 </nav>
+
+<div *ngIf="isToggled" class="container-fluid p-2 navbarToggle" style="background-color: white">
+  <div class="row">
+    <div class="col-4 justify-content-start">
+      <button class="navbar-toggler" type="button" style="color: #163860 !important;">
+        <i *ngIf="!isMenuOpened" class="bi bi-list" style="margin-right: 5px"></i>
+        <i *ngIf="isMenuOpened" class="bi bi-x-lg" style="margin-right: 5px"></i>
+        <span class="optionsText">Menu</span>
+      </button>
+    </div>
+
+    <div class="col-4 justify-content-center d-flex">
+      <img class="thumbnailImg" alt="" src="assets/images/leFigaro.png">
+    </div>
+
+    <div class="col-4 justify-content-end d-flex">
+      <i class="bi bi-person-fill" style="margin-right: 5px; color: #163860"></i>
+      <span class="optionsText" style="font-size: x-small; margin-top: 5px;">Se connecter</span>
+    </div>
+  </div>
+</div>
+
+<!--
+<div *ngIf="isDropDown" class="container-fluid dropdownElement">
+  <div class="row justify-content-center align-items-center p-2">
+
+  </div>
+</div>
+-->

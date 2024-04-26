@@ -30,10 +30,6 @@
   background-color: #FFCA45;
 }
 
-.header {
-  background-color: white;
-}
-
 a {
   color: #163860;
   font-weight: bold;
@@ -48,6 +44,12 @@ i {
   margin-left: 5px;
 }
 
-.header {
+.container-fluid {
   border-bottom: 4px solid #163860;
+  background-color: white !important;
+}
+
+.headerOptions {
+  overflow-x: auto;
+  white-space: nowrap;
 }

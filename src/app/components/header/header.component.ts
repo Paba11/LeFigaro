@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {CursorService} from "../../services/cursor.service";
 
 @Component({
@@ -8,6 +8,22 @@ import {CursorService} from "../../services/cursor.service";
 })
 export class HeaderComponent {
 
-  constructor(public cursorService: CursorService) {}
+  isToggled: boolean = false;
+
+  constructor(public cursorService: CursorService) {
+    this.checkWindowSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: Event) {
+    this.checkWindowSize();
+  }
+
+  checkWindowSize() {
+    if(window.innerWidth <= 1023) {
+      this.isToggled = true;
+    }
+    else this.isToggled = false;
+  }
 
 }
