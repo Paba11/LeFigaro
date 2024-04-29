@@ -6,6 +6,10 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HeaderComponent } from './components/header/header.component';
 import { ContentsComponent } from './components/contents/contents.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LeftsideContentsComponent } from './components/leftside-contents/leftside-contents.component';
+import { RightsideContentsComponent } from './components/rightside-contents/rightside-contents.component';
+import { CenterContentsComponent } from './components/center-contents/center-contents.component';
+import { RadioCardComponent } from './components/radio-card/radio-card.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     ContentsComponent,
     FooterComponent,
+    LeftsideContentsComponent,
+    RightsideContentsComponent,
+    CenterContentsComponent,
+    RadioCardComponent,
   ],
   imports: [
     BrowserModule,

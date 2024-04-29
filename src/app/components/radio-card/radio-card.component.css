@@ -1,0 +1,41 @@
+.clockCard {
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.leFigaroImg {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.symbol {
+  max-width: 50px;
+  height: auto;
+}
+
+.audioWave {
+  max-width: 30px;
+  height: auto;
+  object-fit: contain;
+}
+
+.moving-text-container {
+  overflow: hidden;
+}
+
+.moving-text {
+  animation: moveRightToLeft 5s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
