@@ -1,3 +1,7 @@
-.line {
+.lineRight {
   border-right: 1px solid lightgray;
+}
+
+.lineLeft {
+  border-left: 1px solid lightgray;
 }

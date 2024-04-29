@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  font-size: small;
+}
+
+.article {
+  color: #163860;
+}
+
+.article:hover {
+  color: #1E66BA;
+}

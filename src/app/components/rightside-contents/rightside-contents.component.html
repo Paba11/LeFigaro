@@ -1,1 +1,25 @@
-<p>rightside-contents works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12" style="height: 600px; overflow-y: auto;">
+      <ul class="list-unstyled">
+        <li *ngFor="let article of articles">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="article col-3">
+                <a>
+                  {{ article.time }}
+                </a>
+              </div>
+              <div id="articleTitle" class="article col-9">
+                <a (mouseenter)="cursorService.changeCursor('pointer', 'articleTitle')"
+                   (mouseleave)="cursorService.changeCursor('cursor', 'articleTitle')">
+                  {{ article.title }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
