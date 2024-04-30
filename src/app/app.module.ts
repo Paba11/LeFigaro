@@ -10,6 +10,8 @@ import { LeftsideContentsComponent } from './components/leftside-contents/leftsi
 import { RightsideContentsComponent } from './components/rightside-contents/rightside-contents.component';
 import { CenterContentsComponent } from './components/center-contents/center-contents.component';
 import { RadioCardComponent } from './components/radio-card/radio-card.component';
+import {CountdownModule} from "ngx-countdown";
+import { CountdownComponent } from './components/countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,13 @@ import { RadioCardComponent } from './components/radio-card/radio-card.component
     RightsideContentsComponent,
     CenterContentsComponent,
     RadioCardComponent,
+    CountdownComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NavbarComponent,
+    CountdownModule,
   ],
   providers: [],
   exports: [],

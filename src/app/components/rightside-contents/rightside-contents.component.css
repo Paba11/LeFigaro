@@ -10,3 +10,7 @@ a {
 .article:hover {
   color: #1E66BA;
 }
+
+.dropdown-item {
+  color: #163860;
+}

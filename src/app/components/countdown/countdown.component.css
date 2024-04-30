@@ -1,0 +1,17 @@
+.letter {
+  color: gray;
+  font-size: small;
+}
+
+.countdown {
+  width: 47px;
+  height: 70px;
+  background-color: #EFF4F9;
+  border-radius: 20%;
+}
+
+.time {
+  color: #0E6EEF;
+  font-size: x-large;
+  margin-top: 15px;
+}
