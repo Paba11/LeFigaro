@@ -1,0 +1,13 @@
+<div *ngFor="let article of articles" class="container">
+  <div class="row mb-2 mt-2">
+    <div class="col-12 mb-1">
+      <span style="color: #0E6EEF">{{article.title}}</span>
+    </div>
+    <div class="col-12 mb-1">
+      <a href="#" style="color: #163860; text-decoration: none">{{article.description}}</a>
+    </div>
+    <div class="col-12">
+      <img alt="" src="{{article.img}}" style="width: 200px; height: 100px; object-fit: fill; overflow: hidden;">
+    </div>
+  </div>
+</div>

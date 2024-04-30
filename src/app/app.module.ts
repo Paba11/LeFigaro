@@ -12,6 +12,7 @@ import { CenterContentsComponent } from './components/center-contents/center-con
 import { RadioCardComponent } from './components/radio-card/radio-card.component';
 import {CountdownModule} from "ngx-countdown";
 import { CountdownComponent } from './components/countdown/countdown.component';
+import { SideArticlesComponent } from './components/side-articles/side-articles.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     CenterContentsComponent,
     RadioCardComponent,
     CountdownComponent,
+    SideArticlesComponent,
   ],
   imports: [
     BrowserModule,
