@@ -1,12 +1,13 @@
-<div *ngFor="let article of articles" class="container">
+<div *ngFor="let article of articles; let i = index" class="container" [ngStyle]="getBorderStyle(i)">
   <div class="row mb-2 mt-2">
     <div class="col-12 mb-1">
       <span style="color: #0E6EEF">{{article.title}}</span>
     </div>
-    <div class="col-12 mb-1">
-      <a href="#" style="color: #163860; text-decoration: none">{{article.description}}</a>
+    <div class="col-12 mb-2">
+      <a class="textCSS" href="#">{{article.description}}</a>
+      <img alt="" src="assets/images/f.png" style="width: 20px; height: auto; margin-left: 5px;">
     </div>
-    <div class="col-12">
+    <div class="col-12 mb-2">
       <img alt="" src="{{article.img}}" style="width: 200px; height: 100px; object-fit: fill; overflow: hidden;">
     </div>
   </div>

@@ -2,6 +2,14 @@
   border-bottom: 1px solid lightgray;
 }
 
-.a:hover {
-  color: #0E6EEF;
+.textCSS:hover {
+  color: #1E66BA;
+}
+
+.textCSS {
+  color: #163860;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: noto-serif, Georgia, Verdana, serif;
 }

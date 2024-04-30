@@ -50,8 +50,10 @@ a {
 }
 
 .button {
-  color: gray;
+  height: 40px;
+  background-color: white;
   border-color: gray;
+  color: #163860;
 }
 
 .button:hover {
@@ -59,4 +61,5 @@ a {
   background-color: white;
   color: #0E6EEF;
 }
+
 

@@ -9,6 +9,10 @@ export class SideArticlesComponent {
 
   articles: {title: string, description: string, img: string}[] = [];
 
+  getBorderStyle(index: number): any {
+    return index === this.articles.length - 1 ? {'border-bottom': 'none'} : {};
+  }
+
   constructor() {
     this.articles = [
       {title: "TRIBUNE", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://picsum.photos/200/110" },

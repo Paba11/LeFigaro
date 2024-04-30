@@ -15,3 +15,14 @@
   font-size: x-large;
   margin-top: 15px;
 }
+
+.button {
+  color: #163860;
+  border-color: #163860;
+}
+
+.button:hover {
+  border-color: #0E6EEF;
+  background-color: white;
+  color: #0E6EEF;
+}
