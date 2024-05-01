@@ -1,3 +1,11 @@
 .lineRight {
   border-right: 1px solid lightgray;
 }
+
+.contents {
+  padding: 2px;
+
+  @media (min-width: 992px) {
+    padding: 1.5rem;
+  }
+}

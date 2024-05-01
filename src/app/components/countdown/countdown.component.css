@@ -26,3 +26,16 @@
   background-color: white;
   color: #0E6EEF;
 }
+
+.paralympiques {
+  background-color: #EFF4F9;
+  width: 200px;
+
+  @media (min-width: 1100px) {
+    width: 210px;
+  }
+
+  @media (min-width: 1139px) {
+    width: 230px;
+  }
+}

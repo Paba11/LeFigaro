@@ -1,1 +1,58 @@
+.title:hover {
+  color: #1E66BA;
+}
 
+.title {
+  color: #163860;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: noto-serif, Georgia, Verdana, serif;
+}
+
+.articlesImg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.body {
+  color: #163860;
+  font-size: small;
+  font-family: noto-serif, Georgia, Verdana, serif;
+}
+
+.plus {
+  color: #163860;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: noto-serif, Georgia, Verdana, serif;
+}
+
+.plus:hover {
+  color: #1E66BA;
+}
+
+.article {
+  border-bottom: 1px solid lightgray;
+}
+
+.arrow {
+  width: 50px;
+  height: auto;
+  color: #0E6EEF;
+}
+
+.button {
+  border-color: #DCEBFF;
+  background-color: #DCEBFF;
+  color: #465E7F;
+  width: 80%;
+  height: 40px;
+}
+
+.button:hover {
+  color: #0E6EEF;
+}

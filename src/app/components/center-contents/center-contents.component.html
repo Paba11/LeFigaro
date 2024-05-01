@@ -1,5 +1,50 @@
 <div class="container">
-  <div class="row align-items-center">
-    <app-main-articles></app-main-articles>
+  <div class="row article mt-2">
+    <div class="col-12 mb-3">
+      <a href="#" class="title">{{ articlesService.firstArticle.title }}</a>
+    </div>
+    <div class="col-12 mb-3">
+      <img class="articlesImg" alt="" src="{{ articlesService.firstArticle.img }}">
+    </div>
+    <div class="col-12 mb-3">
+      <p class="body">{{ articlesService.firstArticle.description }}</p>
+    </div>
+    <div class="col-1">
+      <i class="bi bi-arrow-right arrow"></i>
+    </div>
+    <div class="col-11 mb-3">
+      <a href="#" class="plus">{{ articlesService.firstArticle.plus }}</a>
+    </div>
+  </div>
+
+  <div *ngFor="let article of articlesService.articles1" class="row article mt-3">
+    <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+      <a href="#" class="title">{{ article.title }}</a>
+      <p *ngIf="isSmall" class="body mt-1">{{ article.description }}</p>
+    </div>
+    <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+      <img class="articlesImg" alt="" src="{{ article.img }}">
+    </div>
+    <div *ngIf="!isSmall" class="col-lg-12 mb-2">
+      <p class="body">{{ article.description }}</p>
+    </div>
+    <div class="col-1 mt-2">
+      <i class="bi bi-arrow-right arrow"></i>
+    </div>
+    <div class="col-11 mt-2 mb-3">
+      <a href="#" class="plus">{{ article.plus }}</a>
+    </div>
+  </div>
+
+  <div class="row article mt-3">
+    <div class="col-12 mb-3">
+      <a href="#" class="title">{{ articlesService.survey }}</a>
+    </div>
+    <div class="col-12 mb-3">
+      <div class="btn btn-primary button text-start">Oui</div>
+    </div>
+    <div class="col-lg-12 mb-2">
+      <div class="btn btn-primary button text-start">Non</div>
+    </div>
   </div>
 </div>
