@@ -4,7 +4,7 @@
       <img class="leFigaroImg" alt="" src="assets/images/radio.png">
     </div>
     <div class="col-3 text-center ml-2">
-      <img class="audioWave" alt="" src="assets/images/wave.png">
+      <img *ngIf="!isSmall" class="audioWave" alt="" src="assets/images/wave.png">
     </div>
     <div class="col-3 text-center">
       <div class="btn btn-sm btn-primary" style="border-radius: 50%;">

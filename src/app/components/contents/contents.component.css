@@ -9,3 +9,8 @@
     padding: 1.5rem;
   }
 }
+
+.containerDim {
+  max-width: 1300px;
+  overflow: auto;
+}

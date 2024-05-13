@@ -6,40 +6,42 @@
   </div>
 
   <div class="row justify-content-center align-items-center">
-    <div class="col-3 text-center">
+    <div class="col-3 p-1 text-center">
       <div class="countdown">
         <span class="time">{{ days }}</span><br>
-        <span class="letter">J</span>
+        <span *ngIf="isSmall" class="letter">J</span>
+        <span *ngIf="!isSmall" class="letter">JOURS</span>
       </div>
     </div>
-    <div class="col-3 text-center">
+    <div class="col-3 p-1 text-center">
       <div class="countdown">
         <span class="time">{{ hours }}</span><br>
-        <span class="letter">H</span>
+        <span *ngIf="isSmall" class="letter">H</span>
+        <span *ngIf="!isSmall" class="letter">HEURE</span>
       </div>
     </div>
-    <div class="col-3 text-center">
+    <div class="col-3 p-1 text-center">
       <div class="countdown">
         <span class="time">{{ minutes }}</span><br>
-        <span class="letter">M</span>
+        <span *ngIf="isSmall" class="letter">M</span>
+        <span *ngIf="!isSmall" class="letter">MINS</span>
       </div>
     </div>
-    <div class="col-3 text-center">
+    <div class="col-3 p-1 text-center">
       <div class="countdown">
         <span class="time">{{ seconds }}</span><br>
-        <span class="letter">J</span>
+        <span *ngIf="isSmall" class="letter">S</span>
+        <span *ngIf="!isSmall" class="letter">SECS</span>
       </div>
     </div>
   </div>
 
   <div class="row justify-content-center align-items-center mt-3">
-    <div class="col-12 text-center">
-      <div class="paralympiques">
-        <p class="p-2">
-          <span style="color: #0E6EEF; font-size: x-small; text-decoration: underline;">+33 jours</span>
-          <span style="font-size: x-small"> Jeux paralympiques</span>
-        </p>
-      </div>
+    <div class="col-12 mb-3 ms-2 text-center paralympiques">
+      <p class="p-1">
+        <span style="color: #0E6EEF; font-size: small; text-decoration: underline;">+33 jours</span>
+        <span style="font-size: small"> Jeux paralympiques</span>
+      </p>
     </div>
   </div>
 

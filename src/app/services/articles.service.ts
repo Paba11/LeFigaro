@@ -24,7 +24,7 @@ export class ArticlesService {
 
     this.firstArticle = {
       title: "«Vos amis à vous, ce sont les mollahs!» : Éric Dupond-Moretti attaque Manuel Bompard",
-      img: "https://picsum.photos/720/350",
+      img: "https://placehold.co/720x350/163860/FFFFFF?text=PIC+1",
       description: "FOTO - Manuel Bompard a interpellé le gouvernement alors que les Insoumises Mathilde Panot et Rima Hassan étaient entendues ce matin dans les locaux de la police judiciaire dans le cadre d'enquêtes pour «apologie du terrorisme».",
       plus: "Convocation pour apologie du terrorisme : Mathilde Panot dénonce «un abus de pouvoir» qui «souille» la France",
     }
@@ -32,7 +32,7 @@ export class ArticlesService {
     this.articles1 = [
       {
         title: "Auteur de la «Trilogie new-yorkaise», le romancier américain Paul Auster est mort à l'âge de 77 ans",
-        img: "https://picsum.photos/720/400",
+        img: "https://placehold.co/720x400/163860/FFFFFF?text=PIC+2",
         description: "L’auteur était atteint d’un cancer. Parmi ses autres œuvres à succès figurent notamment «Moon Palace», «Le Livre des illusions» et «Brooklyn Follies».",
         plus: "Baumgartner, de Paul Auster: bonjour tristesse",
       },
