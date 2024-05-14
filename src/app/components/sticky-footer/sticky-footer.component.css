@@ -1,0 +1,16 @@
+.stickyFooter {
+  background-color: #0F6FEF;
+  width: 100%;
+}
+
+.textScript {
+  font-family: noto-serif, serif;
+  font-size: large;
+  color: white
+}
+
+.abonner {
+  background-color: #ECB62F;
+  color: #163860;
+  font-size: small;
+}

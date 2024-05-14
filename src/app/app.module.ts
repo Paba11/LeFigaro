@@ -15,6 +15,8 @@ import { CountdownComponent } from './components/countdown/countdown.component';
 import { SideArticlesComponent } from './components/side-articles/side-articles.component';
 import { HorizontalAdvertisementComponent } from './components/horizontal-advertisement/horizontal-advertisement.component';
 import { VerticalAdvertisementComponent } from './components/vertical-advertisement/vertical-advertisement.component';
+import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
+import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { VerticalAdvertisementComponent } from './components/vertical-advertisem
     SideArticlesComponent,
     HorizontalAdvertisementComponent,
     VerticalAdvertisementComponent,
+    StickyFooterComponent,
+    BottomNavbarComponent,
   ],
   imports: [
     BrowserModule,

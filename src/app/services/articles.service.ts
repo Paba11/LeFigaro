@@ -6,6 +6,12 @@ interface Article {
   description: string;
   plus: string;
 }
+
+interface sideArticle {
+  title: string;
+  description: string;
+  img: string;
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -15,35 +21,53 @@ export class ArticlesService {
   articles1: Article[] = [];
   articles2: Article[] = [];
   articles3: Article[] = [];
+  sideArticles: sideArticle[] = []
 
   survey: string = '';
 
+  getSideArticles(): sideArticle[] {
+    return this.sideArticles;
+  }
+
   constructor() {
 
-    this.survey = "1er-Mai : êtes-vous choqué par le fait que Raphaël Glucksmann ait été empêché de manifester par des militants pro-palestiniens ?";
+    this.survey = "Phasellus sed eleifend risus. Morbi metus metus, cursus non bibendum at, posuere vitae felis?";
 
     this.firstArticle = {
-      title: "«Vos amis à vous, ce sont les mollahs!» : Éric Dupond-Moretti attaque Manuel Bompard",
+      title: "«Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       img: "https://placehold.co/720x350/163860/FFFFFF?text=PIC+1",
-      description: "FOTO - Manuel Bompard a interpellé le gouvernement alors que les Insoumises Mathilde Panot et Rima Hassan étaient entendues ce matin dans les locaux de la police judiciaire dans le cadre d'enquêtes pour «apologie du terrorisme».",
-      plus: "Convocation pour apologie du terrorisme : Mathilde Panot dénonce «un abus de pouvoir» qui «souille» la France",
+      description: "FOTO - Nunc eu mauris ut nulla iaculis luctus. Vestibulum facilisis, magna at iaculis ornare, lacus ante tristique tellus, nec molestie est sem et lacus. Vivamus et orci mauris. Sed eget egestas sem. Curabitur non.",
+      plus: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
     }
 
     this.articles1 = [
       {
-        title: "Auteur de la «Trilogie new-yorkaise», le romancier américain Paul Auster est mort à l'âge de 77 ans",
+        title: "Nam vulputate convallis orci, non elementum augue tempus quis. Nullam ut nulla id lacus dapibus porttitor in a orci.",
         img: "https://placehold.co/720x400/163860/FFFFFF?text=PIC+2",
-        description: "L’auteur était atteint d’un cancer. Parmi ses autres œuvres à succès figurent notamment «Moon Palace», «Le Livre des illusions» et «Brooklyn Follies».",
-        plus: "Baumgartner, de Paul Auster: bonjour tristesse",
+        description: "Nullam vitae eleifend tortor, sit amet mollis nisl. Vestibulum molestie bibendum tellus id dictum. Aenean mollis imperdiet augue, eu pretium est sodales ac.",
+        plus: "Phasellus tincidunt ultricies augue vitae lobortis.",
       },
       {
         title: "États-Unis : s’il est élu, Trump nommera un «procureur spécial» pour poursuivre Biden",
-        img: "https://picsum.photos/720/390",
-        description: "Dans un entretien fleuve au magazine Time, l’ancien président américain a estimé que son successeur s’était rendu coupable de «nombreux crimes» dont il devrait répondre devant la justice.",
-        plus: "Déportations de migrants, femmes sous surveillance... Ce que serait un second mandat de Trump, selon le «Time»",
+        img: "https://placehold.co/720x400/163860/FFFFFF?text=PIC+3",
+        description: "In lobortis, felis nec blandit egestas, mauris odio porttitor lorem, eget porttitor magna massa non felis. Sed vitae sapien dignissim quam pretium faucibus ullamcorper condimentum ante.",
+        plus: "Sed congue libero eget lacus porttitor, quis fringilla urna scelerisque.",
       }
     ]
 
+    this.sideArticles = [
+      {title: "TRIBUNE", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+1" },
+      {title: "SONDAGE", description: "Consectetur adipiscing elit. Sed dapibus velit non lectus consectetur.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+2" },
+      {title: "MÈTÈO", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+3" },
+      {title: "CHRONIQUE", description: "Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+4" },
+      {title: "NOS CONSEILS", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+5" },
+      {title: "CULTURE", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus velit non lectus consectetur, sit amet pretium quam pellentesque. Suspendisse.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+6" },
+      {title: "MADAME", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus mauris, iaculis volutpat erat eget.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+7" },
+      {title: "L'EDITORIAL", description: "Vestibulum tellus mauris, iaculis volutpat erat eget.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+8" },
+      {title: "VOYAGE", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus mauris, iaculis volutpat erat eget.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+9" },
+      {title: "LE FIGARO LA NUIT", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus mauris, iaculis volutpat erat eget.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+10" },
+      {title: "LE CLUB POLITIQUE", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus mauris, iaculis volutpat erat eget.", img: "https://placehold.co/300X150/163860/FFFFFF?text=SIDE+ARTICLE+IMG+11" }
+    ]
   }
 
 }

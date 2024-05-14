@@ -13,3 +13,10 @@
   font-weight: bold;
   font-family: noto-serif, Georgia, Verdana, serif;
 }
+
+.sideArticlesImg {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  overflow: hidden;
+}
