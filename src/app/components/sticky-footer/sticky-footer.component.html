@@ -1,17 +1,24 @@
 <div class="container-fluid stickyFooter">
-  <div class="row justify-content-center p-2">
-    <div class="align-self-center textScript"
-         [ngClass]="{ 'text-end': !isSmall, 'col-8': !isSmall, 'text-start': isSmall, 'col-6': isSmall}"
-    [ngStyle]="{'font-size': isSmall ? 'small' : 'large'}">
+  <div *ngIf="isSmall" class="row justify-content-center p-2">
+    <div class="align-self-center textScript col-6 text-start"
+      [ngStyle]="{'font-size': isSmall ? 'small' : 'large'}">
       <span>S'abonner à partir de </span>
       <span style="font-weight: bold;">0,99€ le premier mois</span>
     </div>
-    <div class="text-end align-self-center"
-         [ngClass]="{ 'col-2': !isSmall, 'col-5': isSmall}">
+    <div class="text-end align-self-center col-5">
+      <div class="btn btn-primary btn-lg abonner">S'ABONNER</div>
+    </div>
+    <div class="align-self-center col-1 text-start">
+      <i class="bi bi-x-lg" style="color: white"></i>
+    </div>
+  </div>
+  <div *ngIf="!isSmall" class="row p-2">
+    <div class="col-11 text-center">
+      <span class="textScript">S'abonner à partir de </span>
+      <span class="me-2 textScript" style="font-weight: bold;">0,99€ le premier mois</span>
       <div class="btn btn-primary btn-lg abonner text-center">S'ABONNER</div>
     </div>
-    <div class="align-self-center"
-         [ngClass]="{ 'text-end': !isSmall, 'text-start': isSmall, 'col-2': !isSmall, 'col-1': isSmall}">
+    <div class="col-1 text-end">
       <i class="bi bi-x-lg" style="color: white"></i>
     </div>
   </div>
