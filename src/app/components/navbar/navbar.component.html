@@ -1,7 +1,7 @@
 <nav *ngIf="!isToggled" class="navbar navbar-expand-lg navbar-dark"
      style="background-color: #163860;">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div id="searchBar" class="col-lg-2 text-center"
+    <div id="searchBar" class="col-lg-2 text-center searchbar"
          (mouseenter)="cursorService.changeCursor('pointer', 'searchBar')"
          (mouseleave)="cursorService.changeCursor('cursor', 'searchBar')">
       <i class="bi bi-search" style="margin-right: 5px;"></i>
@@ -55,7 +55,9 @@
       </ul>
     </div>
 
-    <div class="col-lg-2 text-center">
+    <div id="profile" class="col-lg-2 text-center profile"
+         (mouseenter)="cursorService.changeCursor('pointer', 'profile')"
+         (mouseleave)="cursorService.changeCursor('cursor', 'profile')">
       <i class="bi bi-person-fill" style="margin-right: 5px"></i>
       <span>Se connecter</span>
     </div>
@@ -76,9 +78,11 @@
       <img class="thumbnailImg" alt="" src="assets/images/leFigaro.png">
     </div>
 
-    <div class="col-4 justify-content-end d-flex">
+    <div id="profileToggled" class="col-4 justify-content-end d-flex"
+         (mouseenter)="cursorService.changeCursor('pointer', 'profileToggled')"
+         (mouseleave)="cursorService.changeCursor('cursor', 'profileToggled')">
       <i class="bi bi-person-fill" style="margin-right: 5px; color: #163860"></i>
-      <span class="optionsText" style="font-size: x-small; margin-top: 5px;">Se connecter</span>
+      <span class="optionsText profile" style="font-size: x-small; margin-top: 5px;">Se connecter</span>
     </div>
   </div>
 </div>

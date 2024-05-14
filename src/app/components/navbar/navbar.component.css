@@ -11,6 +11,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color: #ACD2FF;
+}
+
 .dropdownElement {
   transition: transform 0.5s ease;
 }
@@ -31,4 +35,12 @@ a {
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+.searchbar:hover {
+  color: #ACD2FF;
+}
+
+.profile:hover {
+  color: #ACD2FF;
 }
