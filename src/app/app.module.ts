@@ -13,6 +13,8 @@ import { RadioCardComponent } from './components/radio-card/radio-card.component
 import {CountdownModule} from "ngx-countdown";
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { SideArticlesComponent } from './components/side-articles/side-articles.component';
+import { HorizontalAdvertisementComponent } from './components/horizontal-advertisement/horizontal-advertisement.component';
+import { VerticalAdvertisementComponent } from './components/vertical-advertisement/vertical-advertisement.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { SideArticlesComponent } from './components/side-articles/side-articles.
     RadioCardComponent,
     CountdownComponent,
     SideArticlesComponent,
+    HorizontalAdvertisementComponent,
+    VerticalAdvertisementComponent,
   ],
   imports: [
     BrowserModule,
