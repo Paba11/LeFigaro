@@ -1,0 +1,36 @@
+<div class="container-fluid p-0" style="width: 100%">
+  <div class="row justify-content-center align-items-center p-lg-4 ms-lg-4 me-lg-4 ms-0 me-0 p-0">
+    <div class="col-1 blueBorderTop"></div>
+    <div class="col-2"></div>
+    <div class="col-9 blueBorderTop"></div>
+
+    <div class="col-12 blueBorderCenter">
+      <div class="row justify-content-center p-5">
+        <div class="col-6 text-start">
+          <h2 class="title">Video Gallery</h2>
+        </div>
+        <div class="col-6 text-end">
+          <a href="#" class="seeAll">
+            Ver Tous
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div *ngFor="let videoArticle of articlesService.videoGallery, let i = index" class="col-3 p-1">
+          <div class="col-12" [id]="'img' + i"
+               (mouseenter)="cursorService.changeCursor('pointer', 'img' + i)"
+               (mouseleave)="cursorService.changeCursor('cursor', 'img' + i)">
+            <img class="videoFrame" src="{{ videoArticle.images[0] }}" alt="">
+          </div>
+          <div class="col-12 mt-2 text-start">
+            <a href="#" class="description">{{ videoArticle.title }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-1 blueBorderBottom"></div>
+    <div class="col-2"></div>
+    <div class="col-9 blueBorderBottom"></div>
+  </div>
+</div>

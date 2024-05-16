@@ -17,6 +17,7 @@ import { HorizontalAdvertisementComponent } from './components/horizontal-advert
 import { VerticalAdvertisementComponent } from './components/vertical-advertisement/vertical-advertisement.component';
 import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
 import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
+import { VideoListComponent } from './components/video-list/video-list.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.
     VerticalAdvertisementComponent,
     StickyFooterComponent,
     BottomNavbarComponent,
+    VideoListComponent,
   ],
   imports: [
     BrowserModule,

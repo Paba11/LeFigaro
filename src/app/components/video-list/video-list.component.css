@@ -1,0 +1,42 @@
+.blueBorderCenter {
+  border-left: 10px solid #D3E6FF;
+  border-right: 10px solid #D3E6FF;
+}
+
+.blueBorderTop {
+  border-top: 10px solid #D3E6FF;
+}
+
+.blueBorderBottom {
+  border-bottom: 10px solid #D3E6FF;
+}
+
+.videoFrame {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.title {
+  font-family: noto-serif, Georgia, Verdana, serif;
+  font-weight: bold;
+  color: #163860;
+  text-decoration: none;
+}
+
+.seeAll {
+  text-decoration: none;
+  color: #163860;
+}
+
+.description {
+  font-family: noto-serif, Georgia, Verdana, serif;
+  text-decoration: none;
+  color: #183A61;
+  font-size: small;
+}
+
+.description:hover {
+  color: #1E66BA;
+}

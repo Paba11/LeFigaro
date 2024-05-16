@@ -24,4 +24,12 @@ export class CenterContentsComponent {
     console.log(this.isSmall);
   }
 
+  restartVideo(id: number) {
+    const videoTV: HTMLVideoElement = document.getElementById('video' + id) as HTMLVideoElement;
+    if (videoTV) {
+      videoTV.currentTime = 0;
+      videoTV.play();
+    }
+  }
+
 }
