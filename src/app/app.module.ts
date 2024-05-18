@@ -18,6 +18,9 @@ import { VerticalAdvertisementComponent } from './components/vertical-advertisem
 import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
 import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
 import { VideoListComponent } from './components/video-list/video-list.component';
+import { CardListComponent } from './components/card-list/card-list.component';
+import { ArticleListComponent } from './components/article-list/article-list.component';
+import { ServicesListComponent } from './components/services-list/services-list.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { VideoListComponent } from './components/video-list/video-list.component
     StickyFooterComponent,
     BottomNavbarComponent,
     VideoListComponent,
+    CardListComponent,
+    ArticleListComponent,
+    ServicesListComponent,
   ],
   imports: [
     BrowserModule,

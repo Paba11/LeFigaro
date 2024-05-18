@@ -4,6 +4,13 @@ interface Gallery {
   title: string;
   images: string[];
 }
+
+interface Card {
+  img: string;
+  description: string;
+  bottom: string;
+}
+
 interface Video {
   title: string;
   video: string;
@@ -16,6 +23,12 @@ interface Article {
   img: string;
   description: string;
   plus: string;
+}
+
+interface ArticleList {
+  title: string;
+  img: string;
+  description: string[];
 }
 
 interface SmallArticle {
@@ -34,7 +47,9 @@ export class ArticlesService {
   videoArticles: Video[] = [];
   photoGallery: Gallery;
   videoGallery: Gallery[] = [];
-  sideArticles: SmallArticle[] = []
+  cardList: Card[] = [];
+  articleList: ArticleList[] = [];
+  sideArticles: SmallArticle[] = [];
 
   survey: string = '';
 
@@ -122,6 +137,81 @@ export class ArticlesService {
         title: "Nulla tempor enim ex, sed rhoncus tellus semper a. Vivamus lacinia mi eget mauris cursus.",
         images: ["https://placehold.co/400X300/163860/FFFFFF?text=VIDEOGALLERY+4"]
       },
+    ];
+
+    this.cardList = [
+      {
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=CARDPIC+1",
+        description: "Praesent condimentum elit neque. Curabitur sit amet mattis lectus, sed cursus neque. Praesent sagittis urna a elit interdum fermentum.",
+        bottom: "Méedias-France",
+      },
+      {
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=CARDPIC+2",
+        description: "Morbi malesuada eu ligula id vulputate. In vitae lacus et quam condimentum faucibus sit amet ut lacus.",
+        bottom: "Méedia-Start",
+      },
+      {
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=CARDPIC+3",
+        description: "Curabitur laoreet dui libero, quis pharetra mauris vestibulum ut. Fusce semper elit non tincidunt sodales.",
+        bottom: "Médias-France",
+      },
+      {
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=CARDPIC+4",
+        description: "Nunc a turpis dolor. Phasellus est neque, pretium nec urna non, semper sollicitudin lectus.",
+        bottom: "Le Figaro Services",
+      },
+
+    ];
+
+    this.articleList = [
+      {
+        title: "Politique",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+1",
+        description: ["Phasellus auctor ante sed suscipit pulvinar. Duis placerat malesuada porta.", "Ut urna nulla, sagittis et elit quis, imperdiet commodo erat. Pellentesque interdum bibendum ligula vel blandit",
+        "Aliquam varius elit orci, et dapibus est facilisis gravida", "Sed feugiat sollicitudin nunc ullamcorper elementum. Mauris sed placerat tortor"],
+      },
+      {
+        title: "International",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+2",
+        description: ["Nunc a tellus ac nisl facilisis iaculis. Ut aliquam odio nec nisl porta imperdiet", "Quisque euismod orci id lacus aliquet laoreet. Donec ultricies placerat nunc, vel ornare tortor varius nec",
+        "Curabitur purus ligula, pellentesque et posuere quis, aliquam in erat", "Duis enim leo, facilisis eget auctor vel, consectetur sed tortor. Donec aliquam nec nibh vitae sodales"],
+      },
+      {
+        title: "Société & Èducation",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+3",
+        description: ["Nam nec odio dui. Sed ante felis, porta in molestie et, ultrices ut enim", "Phasellus at facilisis tortor, eu vestibulum quam. Etiam id commodo mauris. Phasellus ac nulla tortor",
+        "Vivamus felis turpis, fermentum quis varius quis, rhoncus nec sem", "Aliquam accumsan mi ac est pulvinar ultrices. Nulla facilisi. In finibus dui at euismod facilisis"],
+      },
+      {
+        title: "Èconomie",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+4",
+        description: ["Nullam consequat nulla at rhoncus rhoncus", "Maecenas aliquet magna scelerisque luctus vehicula. Vestibulum eu tincidunt justo",
+        "Fusce eget dui fringilla, lobortis erat at, ullamcorper nibh. Vestibulum id dictum quam", "Nunc consectetur feugiat nisi at suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus"],
+      },
+      {
+        title: "Sport",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+5",
+        description: ["Phasellus auctor ante sed suscipit pulvinar. Duis placerat malesuada porta.", "Ut urna nulla, sagittis et elit quis, imperdiet commodo erat. Pellentesque interdum bibendum ligula vel blandit",
+          "Aliquam varius elit orci, et dapibus est facilisis gravida", "Sed feugiat sollicitudin nunc ullamcorper elementum. Mauris sed placerat tortor"],
+      },
+      {
+        title: "FigaroVox",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+6",
+        description: ["Nunc a tellus ac nisl facilisis iaculis. Ut aliquam odio nec nisl porta imperdiet", "Quisque euismod orci id lacus aliquet laoreet. Donec ultricies placerat nunc, vel ornare tortor varius nec",
+          "Curabitur purus ligula, pellentesque et posuere quis, aliquam in erat", "Duis enim leo, facilisis eget auctor vel, consectetur sed tortor. Donec aliquam nec nibh vitae sodales"],
+      },
+      {
+        title: "Voyage",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+7",
+        description: ["Nam nec odio dui. Sed ante felis, porta in molestie et, ultrices ut enim", "Phasellus at facilisis tortor, eu vestibulum quam. Etiam id commodo mauris. Phasellus ac nulla tortor",
+          "Vivamus felis turpis, fermentum quis varius quis, rhoncus nec sem", "Aliquam accumsan mi ac est pulvinar ultrices. Nulla facilisi. In finibus dui at euismod facilisis"],
+      },
+      {
+        title: "Madame Figaro",
+        img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+8",
+        description: ["Nullam consequat nulla at rhoncus rhoncus", "Maecenas aliquet magna scelerisque luctus vehicula. Vestibulum eu tincidunt justo",
+          "Fusce eget dui fringilla, lobortis erat at, ullamcorper nibh. Vestibulum id dictum quam", "Nunc consectetur feugiat nisi at suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus"],
+      }
     ]
 
     this.sideArticles = [

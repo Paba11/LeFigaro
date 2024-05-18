@@ -1,0 +1,37 @@
+.cardSize {
+  height: 100%;
+  background-color: #F2F2F2;
+  border-radius: 0;
+}
+
+.grayBorder {
+  border-top: 5px solid #F2F2F2;
+  border-bottom: 5px solid #F2F2F2;
+}
+
+.title {
+  font-size: xx-large;
+  color: #333333;
+}
+
+.cardImg {
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.description {
+  color: #333333;
+  font-size: small;
+}
+
+.description:hover {
+  color: #5889C8;
+}
+
+.bottomDescription {
+  color: #727272;
+  font-size: small;
+}

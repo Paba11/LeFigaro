@@ -1,0 +1,24 @@
+<div class="container-fluid p-0" style="width: 100%">
+  <div class="row justify-content-center align-items-center p-lg-4 ms-lg-4 me-lg-4 ms-0 me-0 p-0 grayBorder">
+    <div class="col-12">
+      <div class="row justify-content-center p-2">
+        <div class="col-12 text-start mb-2">
+          <span class="title">
+            Partenaires
+          </span>
+          <i class="bi bi-info-circle ms-2"></i>
+        </div>
+
+        <div *ngFor="let cardArticle of articlesService.cardList, let i = index" class="col-3 p-2 text-start">
+          <div class="card cardSize">
+            <img src="{{ cardArticle.img }}" class="card-img-top cardImg" alt="">
+            <div class="card-body">
+              <h5 class="card-title description">{{ cardArticle.description }}</h5>
+              <p class="card-text bottomDescription">{{ cardArticle.bottom }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container-fluid p-0 p-md-5" style="width: 100%">
+  <div class="row justify-content-center p-2 p-md-0 grayBorder">
+    <div *ngFor="let article of articleService.articleList" class="col-12 col-md-3 mt-4">
+      <div class="mb-4">
+        <a href="#" class="title" style="text-decoration: none">{{ article.title }}</a>
+      </div>
+      <a href="#">
+        <img class="image mb-3" alt="" src="{{ article.img }}">
+      </a>
+      <ul class="list-unstyled">
+        <li *ngFor="let description of article.description; let i = index" class="mb-4 text-start">
+          <a href="#" class="description">
+            {{ description }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
