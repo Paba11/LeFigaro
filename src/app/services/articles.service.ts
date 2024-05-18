@@ -177,7 +177,7 @@ export class ArticlesService {
         "Curabitur purus ligula, pellentesque et posuere quis, aliquam in erat", "Duis enim leo, facilisis eget auctor vel, consectetur sed tortor. Donec aliquam nec nibh vitae sodales"],
       },
       {
-        title: "Société & Èducation",
+        title: "Société",
         img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+3",
         description: ["Nam nec odio dui. Sed ante felis, porta in molestie et, ultrices ut enim", "Phasellus at facilisis tortor, eu vestibulum quam. Etiam id commodo mauris. Phasellus ac nulla tortor",
         "Vivamus felis turpis, fermentum quis varius quis, rhoncus nec sem", "Aliquam accumsan mi ac est pulvinar ultrices. Nulla facilisi. In finibus dui at euismod facilisis"],
