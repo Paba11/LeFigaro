@@ -1,1 +1,31 @@
-<p>services-list works!</p>
+<div class="container-fluid p-0 p-md-2">
+  <div class="row justify-content-center ms-1 me-1 ms-md-3 me-md-3">
+    <div class="col-12 text-start">
+      <div class="title mb-4">Plus de services</div>
+    </div>
+    <div *ngFor="let contents of contentsService.sections" class="col-12 col-md-3 text-start">
+      <div *ngIf="!isSmall" class="subtitle">{{ contents.title }}</div>
+      <ul *ngIf="!isSmall" class="list-unstyled mb-4">
+        <li *ngFor="let service of contents.services">
+          <a href="#" class="services">
+            {{ service }}
+          </a>
+        </li>
+      </ul>
+
+      <div *ngIf="isSmall">
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle subtitleDropdown text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ contents.title }}
+          </button>
+          <ul class="dropdown-menu">
+            <li *ngFor="let service of contents.services">
+              <a class="dropdown-item services" href="#">{{ service }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

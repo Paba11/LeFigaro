@@ -1,0 +1,31 @@
+.title {
+  color: #163860;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #163860;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.subtitleDropdown {
+  color: #163860;
+  font-size: medium;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-color: lightgray;
+}
+
+.services {
+  text-decoration: none;
+  color: #163860;
+  font-size: small;
+}
+
+.services:hover {
+  color: #0E6EEF;
+}
