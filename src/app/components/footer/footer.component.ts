@@ -7,6 +7,7 @@ import {Component, HostListener} from '@angular/core';
 })
 export class FooterComponent {
 
+  footerOption1: string[] = [];
   options: string[] = []
   applications: {img: string, title: string, platforms: string}[] = [];
   isSmall: boolean = false;
@@ -41,7 +42,12 @@ export class FooterComponent {
         title: "Le Figaro Cusine",
         platforms: "IPhone | Android"
       },
-    ]
+    ];
+
+    this.footerOption1 = [
+      "Paramétrer les cookies", "Plan du site", "Confidentialité", "CGU", "CGV", "Info cookies",
+      "Charte", "Aide et contact", "Mentions légales", "Abonnements", "Newsletter", "Publicité", "sitemap",
+    ];
 
   }
 
@@ -51,7 +57,7 @@ export class FooterComponent {
   }
 
   checkWindowSize() {
-    this.isSmall = window.innerWidth <= 991;
+    this.isSmall = window.innerWidth <= 767;
     console.log(this.isSmall);
   }
 

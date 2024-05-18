@@ -57,10 +57,28 @@
   overflow: hidden;
 }
 
+.appImgSm {
+  width: 20px;
+  height: auto;
+  object-fit: fill;
+  overflow: hidden;
+}
+
 .littleTitle {
   color: white;
   font-size: small;
   font-weight: bold;
 }
 
-.
+.footerOptions {
+  color: white;
+  font-size: x-small;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.borderTop {
+  border-top: 1px solid #476486;
+  padding: 1rem;
+  margin-top: 1rem;
+}

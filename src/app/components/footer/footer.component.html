@@ -1,6 +1,6 @@
 <div class="container-fluid footer footerStyle">
   <div class="row justify-content-center p-2 borderBottom">
-    <div class="col-3" [ngClass]="{'borderGray': !isSmall}">
+    <div class="col-12 col-md-3" [ngClass]="{'borderGray': !isSmall, 'mb-2': isSmall, 'p-2': isSmall}">
       <span class="title mb-4">Nos liens utiles</span>
       <ul *ngFor="let option of options" class="list-unstyled listStyle mt-2">
         <li>
@@ -10,7 +10,7 @@
       </ul>
     </div>
 
-    <div class="col-3">
+    <div class="col-12 col-md-3" [ngClass]="{'borderTop': isSmall, 'p-2': isSmall}">
       <span class="title mb-4">Le Kiosque</span>
       <div>
         <img alt="" class="imageFooter mt-2" src="assets/images/kiosque.png">
@@ -21,7 +21,7 @@
       <div class="btn btn-outline-light btn-sm mt-3">LIRE CE NUMERO</div>
     </div>
 
-    <div class="col-3">
+    <div class="col-12 col-md-3" [ngClass]="{'borderTop': isSmall, 'p-2': isSmall}">
       <span class="title mb-4">Abonnement</span>
       <div class="mt-2">
         <ul class="list-unstyled">
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="col-3 borderLeft">
+    <div *ngIf="!isSmall" class="col-12 col-md-3" [ngClass]="{'borderLeft': !isSmall, 'borderTop': isSmall, 'p-2': isSmall}">
       <div class="mb-2">
         <span class="title">Applications mobiles</span>
       </div>
@@ -97,6 +97,63 @@
           <i class="bi bi-tiktok me-2" style="color: white"></i>
         </div>
       </div>
+    </div>
+
+    <div class="col-12 p-2 mb-2 borderTop">
+      <div class="mb-2">
+        <span class="title">Applications mobiles</span>
+      </div>
+      <div *ngFor="let app of applications" class="row mb-2 align-items-center">
+        <div class="col-12">
+          <img class="appImgSm me-2" src="{{ app.img }}">
+          <span class="option" style="font-weight: bold">{{ app.title }} : </span>
+          <span class="option">{{ app.platforms }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="isSmall" class="col-12 p-2 mb-2 borderTop">
+      <div class="col-12">
+          <span class="title">
+            Nos newsletters
+          </span>
+      </div>
+      <div class="col-12">
+        <i class="bi bi-envelope-fill me-2" style="color: white; font-size: small"></i>
+        <span class="optionBigger">inscrivez-vous aux newsletters</span>
+      </div>
+    </div>
+
+    <div *ngIf="isSmall" class="col-12 p-2 mb-2 borderTop">
+      <div class="row">
+        <div class="col-12 mb-1">
+          <span class="title">
+            Suivez-nous sur:
+          </span>
+        </div>
+        <div class="col-1">
+          <i class="bi bi-facebook" style="color: white"></i>
+        </div>
+        <div class="col-1">
+          <i class="bi bi-linkedin" style="color: white"></i>
+        </div>
+        <div class="col-1">
+          <i class="bi bi-twitter" style="color: white"></i>
+        </div>
+        <div class="col-1">
+          <i class="bi bi-instagram" style="color: white"></i>
+        </div>
+        <div class="col-1">
+          <i class="bi bi-tiktok" style="color: white"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center p-2">
+    <div class="col-12 p-0 text-center">
+      <a *ngFor="let option of footerOption1" href="#" class="footerOptions me-4">{{ option }}</a>
     </div>
   </div>
 </div>
