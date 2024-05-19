@@ -1,25 +1,29 @@
 import {Component, HostListener} from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  selector: 'app-footer-small',
+  templateUrl: './footer-small.component.html',
+  styleUrl: './footer-small.component.css'
 })
-export class FooterComponent {
-
-  footerOption1: string[] = [];
-  options: string[] = []
+export class FooterSmallComponent {
+  firstHalfOptions: string[] = [];
+  secondHalfOptions: string[] = [];
+  footerOption: string[] = [];
   applications: {img: string, title: string, platforms: string}[] = [];
   isSmall: boolean = false;
 
   constructor() {
     this.checkWindowSize();
 
-    this.options = [
+    this.firstHalfOptions = [
       "Nos applications mobiles", "Suivre le Figaro sur Google", "Le Figaro Bordeaux", "Le Figaro Lion",
-      "Le Figaro Marseille", "Le Figaro Nantes", "Le Figaro Nice", "Les vidéos Figaro", "Les podcast du Figaro",
-      "Les programmes TV", "Les resultats sportif", "Carnet du jour", "Figaro store", "Jeux",
+      "Le Figaro Marseille", "Le Figaro Nantes", "Le Figaro Nice",
     ];
+
+    this.secondHalfOptions = [
+      "Les vidéos Figaro", "Les podcast du Figaro",
+      "Les programmes TV", "Les resultats sportif", "Carnet du jour", "Figaro store", "Jeux",
+    ]
 
     this.applications = [
       {
@@ -44,10 +48,11 @@ export class FooterComponent {
       },
     ];
 
-    this.footerOption1 = [
+    this.footerOption = [
       "Paramétrer les cookies", "Plan du site", "Confidentialité", "CGU", "CGV", "Info cookies",
       "Charte", "Aide et contact", "Mentions légales", "Abonnements", "Newsletter", "Publicité", "sitemap",
     ];
+
   }
 
   @HostListener('window:resize', ['$event'])

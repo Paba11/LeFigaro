@@ -21,7 +21,6 @@ export class CenterContentsComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 991 && window.innerWidth >= 768;
-    console.log(this.isSmall);
   }
 
   restartVideo(id: number) {

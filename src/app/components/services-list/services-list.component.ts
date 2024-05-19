@@ -21,7 +21,6 @@ export class ServicesListComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 991;
-    console.log(this.isSmall);
   }
 
 }

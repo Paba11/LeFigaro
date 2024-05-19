@@ -22,6 +22,5 @@ export class ArticleListComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 991 && window.innerWidth >= 768;
-    console.log(this.isSmall);
   }
 }

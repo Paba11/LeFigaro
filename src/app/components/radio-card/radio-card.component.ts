@@ -20,7 +20,6 @@ export class RadioCardComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 1250;
-    console.log(this.isSmall);
   }
 
 }

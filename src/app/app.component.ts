@@ -11,6 +11,7 @@ export class AppComponent {
   lastScrollTop: number = 0;
   navbarHeight: number = 300;
   isSmall: boolean = false;
+  isXSmall: boolean = false;
 
   constructor() {
     this.checkWindowSize();
@@ -23,7 +24,7 @@ export class AppComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 991;
-    console.log(this.isSmall);
+    this.isXSmall = window.innerWidth <= 767;
   }
 
   @HostListener('window:scroll', ['$event'])

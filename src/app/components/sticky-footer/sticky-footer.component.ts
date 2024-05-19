@@ -20,6 +20,5 @@ export class StickyFooterComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 768;
-    console.log(this.isSmall);
   }
 }

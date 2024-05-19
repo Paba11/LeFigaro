@@ -25,7 +25,6 @@ export class CountdownComponent {
 
   checkWindowSize() {
     this.isSmall = window.innerWidth <= 1300;
-    console.log(this.isSmall);
   }
 
   ngOnInit(): void {

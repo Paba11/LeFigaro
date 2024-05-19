@@ -21,6 +21,7 @@ import { VideoListComponent } from './components/video-list/video-list.component
 import { CardListComponent } from './components/card-list/card-list.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
 import { ServicesListComponent } from './components/services-list/services-list.component';
+import { FooterSmallComponent } from './components/footer-small/footer-small.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ServicesListComponent } from './components/services-list/services-list.
     CardListComponent,
     ArticleListComponent,
     ServicesListComponent,
+    FooterSmallComponent,
   ],
   imports: [
     BrowserModule,

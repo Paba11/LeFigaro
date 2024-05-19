@@ -4,7 +4,8 @@
 </div>
 <app-horizontal-advertisement></app-horizontal-advertisement>
 <app-contents></app-contents>
-<app-footer></app-footer>
+<app-footer *ngIf="!isXSmall"></app-footer>
+<app-footer-small *ngIf="isXSmall"></app-footer-small>
 <app-sticky-footer class="stickyFooter fade-in" [ngStyle]="{'bottom': isSmall ? '50px' : '0'}"></app-sticky-footer>
 <app-bottom-navbar *ngIf="isSmall" class="stickyBottomNavbar"></app-bottom-navbar>
 <router-outlet></router-outlet>
