@@ -1,6 +1,15 @@
 # LeFigaro
 
-Il progetto completamente responsive segue l'andamento dei breakpoints della pagina originale. Tutti gli elementi visivi sono rappresentati come nella pagina originale, sia gli scorrimenti orizzontali/verticali, sia i menù dropdown.
+Il progetto completamente responsive segue l'andamento dei breakpoints del website Le Figaro, tutti gli elementi visivi sono rappresentati come nella pagina originale:
+- Colorazione di buttons, navbar e scritte.
+- Comparsa/scomparsa dei vari elementi presenti.
+- Dimensionamento e posizionamento dei componenti alle varie dimensioni.
+- Scorrimenti orizzontali/verticali interni ad alcuni componenti.
+- Menù a dropdown.
+- Countdown in real time.
+
+Tutti i loghi ed i simboli sono stati ricreati per non violare i copyright.
+
 Realizzato con Angular 17 e bootstrap.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
