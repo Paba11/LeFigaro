@@ -22,6 +22,7 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
 import { ServicesListComponent } from './components/services-list/services-list.component';
 import { FooterSmallComponent } from './components/footer-small/footer-small.component';
+import { RadioCentralComponent } from './components/radio-central/radio-central.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { FooterSmallComponent } from './components/footer-small/footer-small.com
     ArticleListComponent,
     ServicesListComponent,
     FooterSmallComponent,
+    RadioCentralComponent,
   ],
   imports: [
     BrowserModule,
