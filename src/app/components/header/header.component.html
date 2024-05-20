@@ -1,46 +1,50 @@
-<div class="container-fluid" [ngClass]="{'pt-3': !isToggled}">
-  <div *ngIf="!isToggled" class="row align-items-center">
-    <div class="col-3 d-flex text-left align-items-center" style="color: #163860;">
-      <img alt="" src="assets/images/firstPage.jpg" class="headerThumbnail">
-      <a class="nav-link" href="#" style="font-size: small; margin-left: 5px; font-weight: normal !important;">
-        Lire le journal
-      </a>
+<div class="bar" [ngClass]="{'pt-3': !isToggled}">
+  <div class="container-fluid" style="max-width: 1400px;">
+    <div *ngIf="!isToggled" class="row align-items-center">
+      <div class="col-3 d-flex text-left align-items-center" style="color: #163860;">
+        <img alt="" src="assets/images/firstPage.jpg" class="headerThumbnail">
+        <a class="nav-link" href="#" style="font-size: small; margin-left: 5px; font-weight: normal !important;">
+          Lire le journal
+        </a>
+      </div>
+      <div class="col-6 text-center">
+        <img src="assets/images/leFigaro.png" class="headerImg"><br>
+      </div>
+      <div class="col-3 justify-content-end d-flex">
+        <button class="btn btn-md headerButton">
+          <strong>Abbonez-vous</strong><br><small>0,99€ le premier mois</small>
+        </button>
+      </div>
     </div>
-    <div class="col-6 text-center">
-      <img src="assets/images/leFigaro.png" class="headerImg"><br>
-    </div>
-    <div class="col-3 justify-content-end d-flex">
-      <button class="btn btn-md headerButton">
-        <strong>Abbonez-vous</strong><br><small>0,99€ le premier mois</small></button>
-    </div>
-  </div>
 
-  <div class="row headerOptions" [ngClass]="{'mt-4': !isToggled}">
-    <div class="col-12">
-      <ul class="list-unstyled mx-auto" style="margin-bottom: 10px !important;" [ngClass]="{'text-center': !isToggled}">
-        <li class="d-inline-block mx-3">
-          <a class="nav-link" href="#">
-            <span>Èditions locales</span>
-            <i class="bi bi-caret-down"></i>
-          </a>
-        </li>
-        <li class="d-inline-block mx-3">
-          <a class="nav-link" href="#">
-            <span>Radio & Podcasts</span>
-          </a>
-        </li>
-        <li class="d-inline-block mx-3">
-          <a class="nav-link" href="#">
-            <span>TV & Vidéos</span>
-          </a>
-        </li>
-        <li class="d-inline-block mx-3">
-          <a class="nav-link" href="#">
-            <span>Newsletters</span>
-            <i class="bi bi-caret-down"></i>
-          </a>
-        </li>
-      </ul>
+    <div class="row headerOptions" [ngClass]="{'mt-4': !isToggled}">
+      <div class="col-12">
+        <ul class="list-unstyled mx-auto" style="margin-bottom: 10px !important;"
+            [ngClass]="{'text-center': !isToggled}">
+          <li class="d-inline-block mx-3">
+            <a class="nav-link" href="#">
+              <span>Èditions locales</span>
+              <i class="bi bi-caret-down"></i>
+            </a>
+          </li>
+          <li class="d-inline-block mx-3">
+            <a class="nav-link" href="#">
+              <span>Radio & Podcasts</span>
+            </a>
+          </li>
+          <li class="d-inline-block mx-3">
+            <a class="nav-link" href="#">
+              <span>TV & Vidéos</span>
+            </a>
+          </li>
+          <li class="d-inline-block mx-3">
+            <a class="nav-link" href="#">
+              <span>Newsletters</span>
+              <i class="bi bi-caret-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

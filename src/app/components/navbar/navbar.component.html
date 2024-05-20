@@ -1,65 +1,67 @@
-<nav *ngIf="!isToggled" class="navbar navbar-expand-lg navbar-dark"
+<nav *ngIf="!isToggled"
      style="background-color: #163860;">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div id="searchBar" class="col-lg-2 text-center searchbar"
-         (mouseenter)="cursorService.changeCursor('pointer', 'searchBar')"
-         (mouseleave)="cursorService.changeCursor('cursor', 'searchBar')">
-      <i class="bi bi-search" style="margin-right: 5px;"></i>
-      <span>Rechercher</span>
-    </div>
+  <div class="container navbar navbar-expand-lg navbar-dark" style="max-width: 1400px;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div id="searchBar" class="col-lg-2 text-center searchbar"
+           (mouseenter)="cursorService.changeCursor('pointer', 'searchBar')"
+           (mouseleave)="cursorService.changeCursor('cursor', 'searchBar')">
+        <i class="bi bi-search" style="margin-right: 5px;"></i>
+        <span>Rechercher</span>
+      </div>
 
-    <div class="col-sm-2 col-lg-8 text-center navbarSmall">
-      <ul class="navbar-nav mx-auto justify-content-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">JO Paris 2024 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Politique</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">International</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Société</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vox</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Èconomie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sport</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Culture</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Voyage</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Style</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Madame</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vin</a>
-        </li>
-        <li class="nav-item mt-2" id="listDropdown"
-            (mouseenter)="cursorService.changeCursor('pointer', 'listDropdown')"
-            (mouseleave)="cursorService.changeCursor('cursor', 'listDropdown')">
-          <i *ngIf="!isDropDown" class="bi bi-arrow-down-circle" (click)="dropdown()"></i>
-          <i *ngIf="isDropDown" class="bi bi-arrow-up-circle" (click)="dropdown()"></i>
-        </li>
-      </ul>
-    </div>
+      <div class="col-sm-2 col-lg-8 text-center navbarSmall">
+        <ul class="navbar-nav mx-auto justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">JO Paris 2024 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Société</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Èconomie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Voyage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Style</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Madame</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vin</a>
+          </li>
+          <li class="nav-item mt-2" id="listDropdown"
+              (mouseenter)="cursorService.changeCursor('pointer', 'listDropdown')"
+              (mouseleave)="cursorService.changeCursor('cursor', 'listDropdown')">
+            <i *ngIf="!isDropDown" class="bi bi-arrow-down-circle" (click)="dropdown()"></i>
+            <i *ngIf="isDropDown" class="bi bi-arrow-up-circle" (click)="dropdown()"></i>
+          </li>
+        </ul>
+      </div>
 
-    <div id="profile" class="col-lg-2 text-center profile"
-         (mouseenter)="cursorService.changeCursor('pointer', 'profile')"
-         (mouseleave)="cursorService.changeCursor('cursor', 'profile')">
-      <i class="bi bi-person-fill" style="margin-right: 5px"></i>
-      <span>Se connecter</span>
+      <div id="profile" class="col-lg-2 text-center profile"
+           (mouseenter)="cursorService.changeCursor('pointer', 'profile')"
+           (mouseleave)="cursorService.changeCursor('cursor', 'profile')">
+        <i class="bi bi-person-fill" style="margin-right: 5px"></i>
+        <span>Se connecter</span>
+      </div>
     </div>
   </div>
 </nav>
