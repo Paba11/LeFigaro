@@ -3,12 +3,13 @@
 Il progetto completamente responsive segue l'andamento dei breakpoints del website Le Figaro, tutti gli elementi visivi sono rappresentati come nella pagina originale:
 - Colorazione di buttons, navbar e scritte.
 - Comparsa/scomparsa dei vari elementi presenti.
-- Dimensionamento e posizionamento dei componenti alle varie dimensioni.
+- Dimensionamento e posizionamento dei componenti alle varie dimensioni della finestra.
 - Scorrimenti orizzontali/verticali interni ad alcuni componenti.
 - Menù a dropdown.
+- Immagini ottenute tramite placehold.co.
+- Testi ottenuti con Lorem Ipsum.
+- Loghi e simboli ricreati per non violare i copyright.
 - Countdown in real time.
-
-Tutti i loghi ed i simboli sono stati ricreati per non violare i copyright.
 
 Realizzato con Angular 17 e bootstrap.
 
