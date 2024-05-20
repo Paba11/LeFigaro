@@ -1,5 +1,8 @@
 # LeFigaro
 
+Il progetto completamente responsive segue l'andamento dei breakpoints della pagina originale. Tutti gli elementi visivi sono rappresentati come nella pagina originale, sia gli scorrimenti orizzontali/verticali, sia i menù dropdown.
+Realizzato con Angular 17 e bootstrap.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
 ## Development server
