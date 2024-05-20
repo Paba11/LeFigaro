@@ -23,6 +23,7 @@ import { ArticleListComponent } from './components/article-list/article-list.com
 import { ServicesListComponent } from './components/services-list/services-list.component';
 import { FooterSmallComponent } from './components/footer-small/footer-small.component';
 import { RadioCentralComponent } from './components/radio-central/radio-central.component';
+import { SelectionArticlesComponent } from './components/selection-articles/selection-articles.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { RadioCentralComponent } from './components/radio-central/radio-central.
     ServicesListComponent,
     FooterSmallComponent,
     RadioCentralComponent,
+    SelectionArticlesComponent,
   ],
   imports: [
     BrowserModule,

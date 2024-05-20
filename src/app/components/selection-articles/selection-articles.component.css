@@ -1,0 +1,33 @@
+.background {
+  background-color: #D3E7FF;
+}
+
+.title {
+  color: #163860;
+  font-family: noto-serif, Georgia, Verdana, serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #1E66BA;
+  font-size: small;
+  font-weight: bold;
+}
+
+.description {
+  font-size: small;
+  color: #163860;
+  font-family: noto-serif, Georgia, Verdana, serif;
+}
+
+.articleImg {
+  max-width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.borderBottom {
+  border-bottom: 2px solid lightgray;
+  width: 90%;
+}

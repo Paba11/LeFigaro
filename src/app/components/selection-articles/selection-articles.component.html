@@ -1,0 +1,16 @@
+<div class="container-fluid background p-2 mt-3 mb-3">
+  <div class="row p-2">
+    <span class="title">La sélection du Figaro</span>
+  </div>
+  <div *ngFor="let article of articles; let i = index" class="row p-2 mt-2 align-items-center">
+    <div class="col-7 col-sm-6">
+      <span class="subtitle">{{ article.subtitle }}</span><br>
+      <p class="title">{{ article.title }}</p>
+      <p class="description d-none d-sm-block">{{ article.description }}</p>
+    </div>
+    <div class="col-5 col-sm-6">
+      <img class="articleImg" alt="" src="{{ article.img }}">
+    </div>
+    <div *ngIf="i === 0" class="col-12 p-2 ms-4 borderBottom text-center"></div>
+  </div>
+</div>
