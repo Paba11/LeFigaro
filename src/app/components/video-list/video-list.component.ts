@@ -21,6 +21,6 @@ export class VideoListComponent {
   }
 
   checkWindowSize() {
-    this.isSmall = window.innerWidth <= 991;
+    this.isSmall = window.innerWidth <= 800;
   }
 }

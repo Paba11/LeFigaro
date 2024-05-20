@@ -122,7 +122,7 @@ export class ArticlesService {
 
     this.videoGallery = [
       {
-        title: "Phasellus iaculis justo tortor, non laoreet felis posuere ut. Aliquam non turpis et leo varius bibendum.",
+        title: "Phasellus iaculis justo tortor, non laoreet felis posuere. Aliquam non turpis.",
         images: ["https://placehold.co/400X300/163860/FFFFFF?text=VIDEOGALLERY+1"]
       },
       {
@@ -130,11 +130,11 @@ export class ArticlesService {
         images: ["https://placehold.co/400X300/163860/FFFFFF?text=VIDEOGALLERY+2"]
       },
       {
-        title: "In cursus lacus sed scelerisque sagittis. Phasellus eget eleifend erat, vitae condimentum mauris.",
+        title: "In cursus lacus sed scelerisque sagittis. Phasellus eget eleifend erat, vitae.",
         images: ["https://placehold.co/400X300/163860/FFFFFF?text=VIDEOGALLERY+3"]
       },
       {
-        title: "Nulla tempor enim ex, sed rhoncus tellus semper a. Vivamus lacinia mi eget mauris cursus.",
+        title: "Nulla tempor enim ex, sed rhoncus tellus semper a. Vivamus lacinia eget mauris.",
         images: ["https://placehold.co/400X300/163860/FFFFFF?text=VIDEOGALLERY+4"]
       },
     ];

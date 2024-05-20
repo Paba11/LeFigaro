@@ -10,9 +10,17 @@ import {CursorService} from "../../services/cursor.service";
 export class ArticleListComponent {
 
   isSmall: boolean = false;
+  additiveElement: {title: string; img: string; description: string[]};
 
   constructor(public articleService: ArticlesService, public cursorService: CursorService) {
     this.checkWindowSize();
+
+    this.additiveElement = {
+      title: "Partenaires",
+      img: "https://placehold.co/400X200/163860/FFFFFF?text=ARTICLE+LIST+1",
+      description: ["Phasellus auctor ante sed suscipit pulvinar. Duis placerat malesuada porta.", "Ut urna nulla, sagittis et elit quis, imperdiet commodo erat. Pellentesque interdum bibendum ligula vel blandit",
+        "Aliquam varius elit orci, et dapibus est facilisis gravida", "Sed feugiat sollicitudin nunc ullamcorper elementum. Mauris sed placerat tortor"],
+    }
   }
 
   @HostListener('window:resize', ['$event'])

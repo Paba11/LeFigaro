@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {ArticlesService} from "../../services/articles.service";
 
 @Component({
@@ -8,6 +8,18 @@ import {ArticlesService} from "../../services/articles.service";
 })
 export class CardListComponent {
 
-  constructor(public articlesService: ArticlesService) {}
+  isSmall: boolean = false;
 
+  constructor(public articlesService: ArticlesService) {
+    this.checkWindowSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: Event) {
+    this.checkWindowSize();
+  }
+
+  checkWindowSize() {
+    this.isSmall = window.innerWidth <= 991;
+  }
 }

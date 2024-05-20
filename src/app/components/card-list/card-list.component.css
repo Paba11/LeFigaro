@@ -1,11 +1,16 @@
 .cardSize {
   height: 100%;
+  min-width: 170px;
+  max-width: 300px;
   background-color: #F2F2F2;
   border-radius: 0;
 }
 
-.grayBorder {
+.grayBorderTop {
   border-top: 5px solid #F2F2F2;
+}
+
+.grayBorderBottom {
   border-bottom: 5px solid #F2F2F2;
 }
 
