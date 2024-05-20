@@ -1,11 +1,11 @@
-<div class="container-fluid p-0 p-md-2">
+<div class="container-fluid p-0 p-md-2" style="max-width: 1400px;">
   <div class="row justify-content-center ms-1 me-1 ms-md-3 me-md-3">
     <div class="col-12 text-start">
       <div class="title mb-4">Plus de services</div>
     </div>
-    <div *ngFor="let contents of contentsService.sections" class="col-12 col-lg-3 text-start">
-      <div *ngIf="!isSmall" class="subtitle">{{ contents.title }}</div>
-      <ul *ngIf="!isSmall" class="list-unstyled mb-4">
+    <div *ngFor="let contents of contentsService.sections" class="col-12 col-md-3 text-start">
+      <div class="subtitle d-none d-md-block">{{ contents.title }}</div>
+      <ul class="d-none d-md-block list-unstyled mb-4">
         <li *ngFor="let service of contents.services">
           <a href="#" class="services">
             {{ service }}
@@ -13,7 +13,7 @@
         </li>
       </ul>
 
-      <div *ngIf="isSmall">
+      <div class="d-block d-md-none">
         <div class="dropdown">
           <button class="btn btn-light dropdown-toggle subtitleDropdown text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{ contents.title }}

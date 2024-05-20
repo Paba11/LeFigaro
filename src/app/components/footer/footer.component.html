@@ -1,108 +1,110 @@
-<div class="container-fluid footer footerStyle">
-  <div class="row justify-content-center p-2 borderBottom">
-    <div class="col-12 col-md-3 borderGray">
-      <span class="title mb-4">Nos liens utiles</span>
-      <ul *ngFor="let option of options" class="list-unstyled listStyle mt-2">
-        <li>
-          <i class="bi bi-caret-right-fill me-2" style="color: white; font-size: x-small"></i>
-          <a href="#" class="option">{{ option }}</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-12 col-md-3">
-      <span class="title mb-4">Le Kiosque</span>
-      <div>
-        <img alt="" class="imageFooter mt-2" src="assets/images/kiosque.png">
-      </div>
-      <div class="mt-2">
-        <span style="color: white; font-size: x-small">Le Figaro</span>
-      </div>
-      <div class="btn btn-outline-light btn-sm mt-3">LIRE CE NUMERO</div>
-    </div>
-
-    <div class="col-12 col-md-3">
-      <span class="title mb-4">Abonnement</span>
-      <div class="mt-2">
-        <ul class="list-unstyled">
+<div class="footerStyle">
+  <div class="container-fluid footer" style="max-width: 1400px">
+    <div class="row justify-content-center p-2 borderBottom">
+      <div class="col-12 col-md-3 borderGray">
+        <span class="title mb-4">Nos liens utiles</span>
+        <ul *ngFor="let option of options" class="list-unstyled listStyle mt-2">
           <li>
-            <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
-            <span class="optionBigger">Decouvrez toute les offres</span>
-          </li>
-          <li>
-            <span
-              style="color: white; font-size: x-small">Les articles en illimité à partir de 0,99€ sans engagement</span>
-          </li>
-          <li>
-            <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
-            <span class="optionBigger">Gerer votre abbonnement</span>
-          </li>
-          <li>
-            <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
-            <span class="optionBigger">Espace personnel</span>
-          </li>
-          <li>
-            <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
-            <span class="optionBigger">Resilier votre abbonnement</span>
+            <i class="bi bi-caret-right-fill me-2" style="color: white; font-size: x-small"></i>
+            <a href="#" class="option">{{ option }}</a>
           </li>
         </ul>
       </div>
-    </div>
 
-    <div class="col-12 col-md-3 borderLeft">
-      <div class="mb-2">
-        <span class="title">Applications mobiles</span>
-      </div>
-      <div *ngFor="let app of applications" class="row mb-2 align-items-center">
-        <div class="col-2">
-          <img class="appImg" src="{{ app.img }}">
+      <div class="col-12 col-md-3">
+        <span class="title mb-4">Le Kiosque</span>
+        <div>
+          <img alt="" class="imageFooter mt-2" src="assets/images/kiosque.png">
         </div>
-        <div class="col-8 ms-1">
-          <span class="littleTitle">{{ app.title }}:</span><br>
-          <span class="option">{{ app.platforms }}</span>
+        <div class="mt-2">
+          <span style="color: white; font-size: x-small">Le Figaro</span>
         </div>
+        <div class="btn btn-outline-light btn-sm mt-3">LIRE CE NUMERO</div>
       </div>
 
-      <div class="row mt-4 mb-2 align-items-center">
-        <div class="col-12 mb-2">
+      <div class="col-12 col-md-3">
+        <span class="title mb-4">Abonnement</span>
+        <div class="mt-2">
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
+              <span class="optionBigger">Decouvrez toute les offres</span>
+            </li>
+            <li>
+            <span
+              style="color: white; font-size: x-small">Les articles en illimité à partir de 0,99€ sans engagement</span>
+            </li>
+            <li>
+              <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
+              <span class="optionBigger">Gerer votre abbonnement</span>
+            </li>
+            <li>
+              <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
+              <span class="optionBigger">Espace personnel</span>
+            </li>
+            <li>
+              <i class="bi bi-arrow-right me-2" style="color: #ECB62F"></i>
+              <span class="optionBigger">Resilier votre abbonnement</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 borderLeft">
+        <div class="mb-2">
+          <span class="title">Applications mobiles</span>
+        </div>
+        <div *ngFor="let app of applications" class="row mb-2 align-items-center">
+          <div class="col-2">
+            <img class="appImg" src="{{ app.img }}">
+          </div>
+          <div class="col-8 ms-1">
+            <span class="littleTitle">{{ app.title }}:</span><br>
+            <span class="option">{{ app.platforms }}</span>
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-2 align-items-center">
+          <div class="col-12 mb-2">
           <span class="title">
             Nos newsletters
           </span>
+          </div>
+          <div class="col-12">
+            <i class="bi bi-envelope-fill me-2" style="color: white; font-size: small"></i>
+            <span class="optionBigger">inscrivez-vous aux newsletters</span>
+          </div>
         </div>
-        <div class="col-12">
-          <i class="bi bi-envelope-fill me-2" style="color: white; font-size: small"></i>
-          <span class="optionBigger">inscrivez-vous aux newsletters</span>
-        </div>
-      </div>
 
-      <div class="row mt-4 mb-2 align-items-center">
-        <div class="col-12 mb-2">
+        <div class="row mt-4 mb-2 align-items-center">
+          <div class="col-12 mb-2">
           <span class="title">
             Suivez-nous sur
           </span>
-        </div>
-        <div class="col-2">
-          <i class="bi bi-facebook me-2" style="color: white"></i>
-        </div>
-        <div class="col-2">
-          <i class="bi bi-linkedin me-2" style="color: white"></i>
-        </div>
-        <div class="col-2">
-          <i class="bi bi-twitter me-2" style="color: white"></i>
-        </div>
-        <div class="col-2">
-          <i class="bi bi-instagram me-2" style="color: white"></i>
-        </div>
-        <div class="col-2">
-          <i class="bi bi-tiktok me-2" style="color: white"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-facebook me-2" style="color: white"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-linkedin me-2" style="color: white"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-twitter me-2" style="color: white"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-instagram me-2" style="color: white"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-tiktok me-2" style="color: white"></i>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="row justify-content-center p-2">
-    <div class="col-12 p-0 text-center">
-      <a *ngFor="let option of footerOption1" href="#" class="footerOptions me-4">{{ option }}</a>
+    <div class="row justify-content-center p-2">
+      <div class="col-12 p-0 text-center">
+        <a *ngFor="let option of footerOption1" href="#" class="footerOptions me-4">{{ option }}</a>
+      </div>
     </div>
   </div>
 </div>

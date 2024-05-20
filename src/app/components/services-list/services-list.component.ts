@@ -20,7 +20,7 @@ export class ServicesListComponent {
   }
 
   checkWindowSize() {
-    this.isSmall = window.innerWidth <= 991;
+    this.isSmall = window.innerWidth <= 768;
   }
 
 }
