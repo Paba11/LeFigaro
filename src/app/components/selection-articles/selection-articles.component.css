@@ -31,3 +31,14 @@
   border-bottom: 2px solid lightgray;
   width: 90%;
 }
+
+.button {
+  background-color: #163860;
+  border-color: #163860;
+}
+
+.btnText {
+  font-weight: bold;
+  font-size: small;
+  color: white;
+}
